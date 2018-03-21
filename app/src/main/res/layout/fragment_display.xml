@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.inclass8.DisplayFragment">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/nameDisplayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editNameImageButton"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/DisplayNamebox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/DisplayNamebox"
+            android:layout_width="169dp"
+            android:layout_height="33dp"
+            android:layout_alignTop="@+id/nameDisplayText"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toStartOf="@+id/editNameImageButton"
+            app:layout_constraintStart_toEndOf="@+id/nameDisplayText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/editNameImageButton"
+            android:layout_width="73dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="38dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_edit" />
+
+
+        <TextView
+            android:id="@+id/emailDsplayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameDisplayText"
+            android:layout_alignTop="@+id/editEmailImageButton"
+            android:layout_marginTop="23dp"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/DisplayEmailbox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameDisplayText" />
+
+        <TextView
+            android:id="@+id/DisplayEmailbox"
+            android:layout_width="169dp"
+            android:layout_height="33dp"
+            android:layout_alignTop="@+id/emailDsplayText"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toStartOf="@+id/editEmailImageButton"
+            app:layout_constraintStart_toEndOf="@+id/emailDsplayText"
+            app:layout_constraintTop_toBottomOf="@+id/DisplayNamebox" />
+
+
+        <ImageButton
+            android:id="@+id/editEmailImageButton"
+            android:layout_width="73dp"
+            android:layout_height="65dp"
+            android:layout_alignStart="@+id/editNameImageButton"
+            android:layout_below="@+id/editNameImageButton"
+            android:layout_marginTop="37dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_edit" />
+
+
+        <TextView
+            android:id="@+id/DepartmentDsplayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/emailDsplayText"
+            android:layout_alignTop="@+id/editDeptImageButton"
+            android:layout_marginTop="17dp"
+            android:text="Department"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/DisplayDeparmentbox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailDsplayText" />
+
+
+        <TextView
+            android:id="@+id/DisplayDeparmentbox"
+            android:layout_width="169dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/DisplayEmailbox"
+            android:layout_alignTop="@+id/DepartmentDsplayText"
+            app:layout_constraintEnd_toStartOf="@+id/DepartmentDsplayText"
+            app:layout_constraintStart_toEndOf="@+id/editDeptImageButton"
+            app:layout_constraintTop_toBottomOf="@+id/DisplayEmailbox" />
+        <ImageButton
+            android:id="@+id/editDeptImageButton"
+            android:layout_width="73dp"
+            android:layout_height="65dp"
+            android:layout_alignStart="@+id/editEmailImageButton"
+            android:layout_below="@+id/editEmailImageButton"
+            android:layout_marginTop="39dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_edit" />
+
+
+        <TextView
+            android:id="@+id/MoodDisplayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/emailDsplayText"
+            android:layout_alignTop="@+id/editMoodImageButton"
+            android:layout_marginTop="21dp"
+            android:text="Mood"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/DisplayMoodbox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DepartmentDsplayText" />
+
+        <TextView
+            android:id="@+id/DisplayMoodbox"
+            android:layout_width="169dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/DisplayDeparmentbox"
+            android:layout_alignTop="@+id/MoodDisplayText"
+            app:layout_constraintEnd_toStartOf="@+id/editMoodImageButton"
+            app:layout_constraintTop_toBottomOf="@+id/DisplayDeparmentbox" />
+
+
+        <ImageButton
+            android:id="@+id/editMoodImageButton"
+            android:layout_width="73dp"
+            android:layout_height="65dp"
+
+            android:layout_alignStart="@+id/editDeptImageButton"
+            android:layout_below="@+id/editDeptImageButton"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_edit" />
+
+
+
+    </RelativeLayout>
+</FrameLayout>

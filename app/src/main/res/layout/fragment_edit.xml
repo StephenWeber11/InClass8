@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.inclass8.EditFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/NameUpdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/EmailUpdate"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/name_hint"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/EmailUpdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Department"
+            android:layout_below="@+id/NameUpdate"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:visibility="invisible" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="127dp"
+            android:layout_height="169dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/Department"
+            android:layout_above="@+id/MoodtextView"
+            android:visibility="invisible" >
+
+            <RadioButton
+                android:id="@+id/SISradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SIS" />
+
+            <RadioButton
+                android:id="@+id/CSradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CS" />
+
+            <RadioButton
+                android:id="@+id/BIOradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BIO" />
+
+            <RadioButton
+                android:id="@+id/OTHERSradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Others" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/MoodtextView"
+            android:layout_width="155dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/seekBar"
+            android:layout_alignStart="@+id/seekBar"
+            android:layout_marginBottom="30dp"
+            android:text="Your Current Mood:"
+            android:visibility="invisible" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/save_button"
+            android:layout_alignStart="@+id/radioGroup1"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible" />
+
+
+
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="347dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="50dp"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/Department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup1"
+            android:layout_below="@+id/EmailUpdate"
+            android:layout_marginTop="20dp"
+            android:text="Department"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</FrameLayout>
